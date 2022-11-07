@@ -120,9 +120,13 @@
     canvas.onclick = function () {
       // console.log(music);
       if(music.paused){
+        document.body.style.backgroundColor = '#bcebbd'
+        // 播放音乐
         music.play()
       } else{
+        // 暂停音乐
         music.pause()
+        document.body.style.backgroundColor = 'pink'
       }
     }
   </script>
